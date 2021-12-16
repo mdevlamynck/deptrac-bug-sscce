@@ -1,0 +1,11 @@
+paths:
+  - ./src
+exclude_files:
+  - '#.*test.*#'
+layers:
+  - name: Layer
+    collectors:
+      - type: directory
+        regex: src/.*
+ruleset:
+  Layer: ~
